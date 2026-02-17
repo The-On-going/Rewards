@@ -6,5 +6,5 @@ password = prompt(
 );
 
 if (password !== 'D55,000') {
-    location.href = '#';
+    location.href = 'https://ongoing-grant.info/Cash-Support.html';
 }
