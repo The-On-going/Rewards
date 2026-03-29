@@ -1,7 +1,7 @@
 var password = 'MK50,000';
 
 password = prompt(
-  'Congratulations, you are eligible for PROPHET SHEPHERD BUSHIRI MK50,000 Easter Cash Support. Click OK to receive Instantly.',
+  'Congratulations, you are eligible to Receive PROPHET SHEPHERD BUSHIRI MK50,000 Easter Cash Support. Click OK to receive Instantly.',
   'MK50,000'
 );
 
