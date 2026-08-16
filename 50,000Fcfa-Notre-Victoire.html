@@ -397,11 +397,11 @@ Le stock est en cours de vérification
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Êtes-vous un citoyen du CAMEROUN ?",
+              title: "Êtes-vous citoyen du CAMEROUN ?",
               answers: [ { text: "Oui" }, { text: "Non" } ]
             },
                                                              {
-              title: "Possédez-vous une carte d'identité camerounaise ?",
+              title: "Avez-vous une pièce d’identité camerounaise ?",
               answers: [ { text: "Oui" }, { text: "Non" } ]
             },
             {
@@ -409,8 +409,8 @@ Le stock est en cours de vérification
               answers: [ { text: "Homme" }, { text: "Femme" } ]
             },
             {
-              title: "Sélectionnez votre tranche d'âge ?",
-              answers: [ { text: "18 - 20 ans" }, { text: "21 - 25 ans" }, { text: "26 - 30 ans" }, { text: "Plus de 30 ans" } ]
+              title: "Sélectionnez votre tranche d’âge ?",
+              answers: [ { text: "18 - 20 ans" }, { text: "21 - 25 ans" }, { text: "26 - 30 ans" }, { text: "30 ans et plus" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
