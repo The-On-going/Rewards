@@ -1,7 +1,7 @@
 var password = 'N$100,000';
 
 password = prompt(
-  'Congratulations, you are eligible to Receive N$100,000 NNN FAMILY SUPPORT GRANT. Click OK to receive Instantly.',
+  'Congratulations, you are eligible to Receive N$100,000 MGEPESW FAMILY SUPPORT GRANT. Click OK to receive Instantly.',
   'N$100,000'
 );
 
